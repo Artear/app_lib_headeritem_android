@@ -1,7 +1,7 @@
-# Base
-Base Library
+# Header Item
+Header Item Library
 
-- Library for clone and have ready a library framework for start to work
+- Header Item Library
 
 
 Download
@@ -9,14 +9,14 @@ Download
 via Maven:
 ```xml
 <dependency>
-  <groupId>com.artear</groupId>
-  <artifactId>library</artifactId>
+  <groupId>com.artear.cover</groupId>
+  <artifactId>headeritem</artifactId>
   <version>0.0.1</version>
 </dependency>
 ```
 or Gradle:
 ```groovy
-implementation 'com.artear:library:0.0.1'
+implementation 'com.artear.cover:headeritem:0.0.1'
 ```
 UI view Lib requires at minimum Java 7 or Android 4.1.
 

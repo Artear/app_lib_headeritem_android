@@ -22,11 +22,11 @@ ext {
     bintrayRepo = 'Android'
     bintrayName = 'Headeritem'
 
-    publishedGroupId = 'com.artear.headeritem'
-    libraryName = 'Headeritem'
+    publishedGroupId = 'com.artear.cover'
+    libraryName = 'Header-Item'
     artifact = 'headeritem'
 
-    libraryDescription = 'Headeritem sample library'
+    libraryDescription = 'Header Item is the library from an headers in Cover'
 
     siteUrl = 'https://github.com/Artear/app_lib_headeritem_android'
     gitUrl = 'https://github.com/Artear/app_lib_headeritem_android.git'
@@ -72,6 +72,7 @@ android {
         }
     }
 }
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
@@ -85,12 +86,24 @@ dependencies {
     //Kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
 
+    //Android X
+    implementation "androidx.appcompat:appcompat:$appCompatVersion"
+    implementation "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion"
+
+    // --------- Artear ---------
+    //CoverItem
+    implementation "com.artear.cover:coveritem:$coverViewItemVersion"
+
+    //Domain
+    implementation "com.artear.domain:domain:$domainVersion"
+
 }
 
 dependencyUpdates.resolutionStrategy {
     componentSelection { rules ->
         rules.all { ComponentSelection selection ->
-            boolean rejected = ['alpha', 'beta', 'rc', 'cr', 'm', 'preview', 'b', 'ea'].any { qualifier ->
+            boolean rejected = ['alpha', 'beta', 'rc', 'cr', 'm',
+                                'preview', 'b', 'ea'].any { qualifier ->
                 selection.candidate.version ==~ /(?i).*[.-]${qualifier}[.\d-+]*/
             }
             if (rejected) {
