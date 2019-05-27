@@ -18,7 +18,7 @@ package com.artear.headeritem
 import com.artear.cover.coveritem.repository.model.BlockContent
 import com.google.gson.annotations.JsonAdapter
 
-@JsonAdapter(BlockContentHeaderDeserializer::class)
-data class BlockContentHeader(
+@JsonAdapter(BlockHeaderDeserializer::class)
+data class BlockHeader(
         val title: String
 ) : BlockContent()

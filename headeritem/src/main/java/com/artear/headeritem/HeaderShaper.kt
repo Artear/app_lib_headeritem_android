@@ -26,10 +26,10 @@ class HeaderShaper : DataShaper<Block, ArtearItem> {
 
     override suspend fun transform(input: Block): ArtearItem {
 
-        val blockContentArticle = (input.data as BlockContentHeader)
+        val blockHeader = (input.data as BlockHeader)
 
         val data = HeaderData(
-                blockContentArticle.title,
+                blockHeader.title,
                 BlockStyle()
         )
 

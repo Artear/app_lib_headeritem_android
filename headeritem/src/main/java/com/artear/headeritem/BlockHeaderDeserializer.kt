@@ -20,14 +20,14 @@ import com.google.gson.JsonDeserializer
 import com.google.gson.JsonElement
 import java.lang.reflect.Type
 
-class BlockContentHeaderDeserializer : JsonDeserializer<BlockContentHeader> {
+class BlockHeaderDeserializer : JsonDeserializer<BlockHeader> {
 
     override fun deserialize(json: JsonElement, typeOfT: Type?, context: JsonDeserializationContext):
-            BlockContentHeader {
+            BlockHeader {
 
 
         val title = json.asJsonObject.get("title").asString
 
-        return BlockContentHeader(title)
+        return BlockHeader(title)
     }
 }
