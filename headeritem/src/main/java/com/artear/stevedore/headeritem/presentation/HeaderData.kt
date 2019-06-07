@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.artear.headeritem
+package com.artear.stevedore.headeritem.presentation
 
-import com.artear.cover.coveritem.presentation.model.ArtearObject
-import com.artear.cover.coveritem.presentation.model.ArtearStyle
+import com.artear.stevedore.stevedoreitems.presentation.model.ArtearObject
+import com.artear.stevedore.stevedoreitems.presentation.model.ArtearStyle
 
 data class HeaderData<T : ArtearStyle>(
         val title: String,

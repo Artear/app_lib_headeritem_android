@@ -13,21 +13,24 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.artear.headeritem
+package com.artear.stevedore.headeritem.presentation
 
-import com.google.gson.JsonDeserializationContext
-import com.google.gson.JsonDeserializer
-import com.google.gson.JsonElement
-import java.lang.reflect.Type
-
-class BlockHeaderDeserializer : JsonDeserializer<BlockHeader> {
-
-    override fun deserialize(json: JsonElement, typeOfT: Type?, context: JsonDeserializationContext):
-            BlockHeader {
+import com.artear.domain.coroutine.DataShaper
+import com.artear.stevedore.headeritem.repository.ContainerHeader
+import com.artear.stevedore.stevedoreitems.presentation.model.ArtearItem
+import com.artear.stevedore.stevedoreitems.presentation.model.ArtearSection
 
 
-        val title = json.asJsonObject.get("title").asString
+class HeaderShaper : DataShaper<ContainerHeader, ArtearItem> {
 
-        return BlockHeader(title)
+    override suspend fun transform(input: ContainerHeader): ArtearItem {
+
+        val data = HeaderData(
+                input.title,
+                input.style)
+
+        return ArtearItem(data, ArtearSection())
     }
+
+
 }

@@ -1,0 +1,39 @@
+{
+  "title": "Esto es un Header",
+  "style": {
+    "background": {
+      "color": {
+        "light": "#CC00CC",
+        "dark": "#660066"
+      }
+    },
+    "title": {
+      "hidden": false,
+      "number_of_lines": 3,
+      "color": {
+        "light": "#CC00CC",
+        "dark": "#660066"
+      },
+      "underline": {
+        "color": {
+          "light": "#CC00CC",
+          "dark": "#660066"
+        }
+      }
+    },
+    "rounded": {
+      "top_left": 10,
+      "top_right": 20,
+      "bottom_left": 30,
+      "bottom_right": 40
+    },
+    "margin": {
+      "rect": {
+        "top": 10,
+        "bottom": 10,
+        "right": 10,
+        "left": 10
+      }
+    }
+  }
+}
