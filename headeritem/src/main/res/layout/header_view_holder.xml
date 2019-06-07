@@ -11,9 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal|top"
-
         app:layout_constraintTop_toTopOf="parent"
-
         tools:layout_height="105dp"
         tools:padding="21dp" />
 

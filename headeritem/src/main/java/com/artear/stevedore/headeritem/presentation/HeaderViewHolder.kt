@@ -13,26 +13,28 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.artear.headeritem
+package com.artear.stevedore.headeritem.presentation
 
+import android.graphics.Color
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
-import com.artear.cover.coveritem.presentation.contract.ArtearViewHolder
-import com.artear.cover.coveritem.presentation.model.ArtearSection
+import com.artear.stevedore.headeritem.repository.ContainerHeaderStyle
+import com.artear.stevedore.stevedoreitems.presentation.contract.ArtearViewHolder
+import com.artear.stevedore.stevedoreitems.presentation.model.ArtearSection
 import kotlinx.android.synthetic.main.header_view_holder.view.*
 
 
-class HeaderViewHolder(itemView: View) :
-        RecyclerView.ViewHolder(itemView), ArtearViewHolder<HeaderData<*>> {
+class HeaderViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView),
+        ArtearViewHolder<HeaderData<ContainerHeaderStyle>> {
 
-    override fun bind(model: HeaderData<*>, artearSection: ArtearSection) {
-
-        model.style
-
+    override fun bind(model: HeaderData<ContainerHeaderStyle>, artearSection: ArtearSection) {
         itemView.apply {
             headerTitle.text = model.title
+            model.style.background?.let {
+                headerTitle.setTextColor(Color.parseColor(it.color.light))
+            }
+            //TODO margin
         }
-
     }
 
 }

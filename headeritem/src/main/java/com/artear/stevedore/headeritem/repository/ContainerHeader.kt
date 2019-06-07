@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.artear.headeritem
+package com.artear.stevedore.headeritem.repository
 
-import com.artear.cover.coveritem.repository.model.BlockContent
 import com.google.gson.annotations.JsonAdapter
 
-@JsonAdapter(BlockHeaderDeserializer::class)
-data class BlockHeader(
-        val title: String
-) : BlockContent()
+@JsonAdapter(ContainerHeaderDeserializer::class)
+data class ContainerHeader(
+    val title: String,
+    val style: ContainerHeaderStyle
+)

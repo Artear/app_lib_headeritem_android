@@ -1,4 +1,4 @@
-package com.artear.headeritem
+package com.artear.stevedore
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry

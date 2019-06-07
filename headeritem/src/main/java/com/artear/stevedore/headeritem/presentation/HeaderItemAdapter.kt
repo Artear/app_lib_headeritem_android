@@ -13,15 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.artear.headeritem
+package com.artear.stevedore.headeritem.presentation
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.artear.cover.coveritem.presentation.contract.ArtearViewHolder
-import com.artear.cover.coveritem.presentation.contract.ItemAdapter
-import com.artear.cover.coveritem.presentation.model.ArtearItem
-import com.artear.cover.coveritem.presentation.model.ArtearSection
+import com.artear.stevedore.headeritem.R
+import com.artear.stevedore.stevedoreitems.presentation.contract.ArtearViewHolder
+import com.artear.stevedore.stevedoreitems.presentation.contract.ItemAdapter
+import com.artear.stevedore.stevedoreitems.presentation.model.ArtearItem
+import com.artear.stevedore.stevedoreitems.presentation.model.ArtearSection
 
 
 class HeaderItemAdapter : ItemAdapter<HeaderData<*>> {

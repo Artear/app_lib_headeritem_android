@@ -9,14 +9,14 @@ Download
 via Maven:
 ```xml
 <dependency>
-  <groupId>com.artear.cover</groupId>
+  <groupId>com.artear.stevedore</groupId>
   <artifactId>headeritem</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.3</version>
 </dependency>
 ```
 or Gradle:
 ```groovy
-implementation 'com.artear.cover:headeritem:0.0.1'
+implementation 'com.artear.stevedore:headeritem:0.0.3'
 ```
 UI view Lib requires at minimum Java 7 or Android 4.1.
 

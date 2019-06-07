@@ -13,25 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.artear.headeritem
+package com.artear.stevedore.headeritem.presentation
 
-import com.artear.cover.coveritem.presentation.model.ArtearItem
-import com.artear.cover.coveritem.presentation.model.ArtearSection
-import com.artear.cover.coveritem.repository.model.block.Block
-import com.artear.cover.coveritem.repository.model.block.BlockStyle
 import com.artear.domain.coroutine.DataShaper
+import com.artear.stevedore.headeritem.repository.ContainerHeader
+import com.artear.stevedore.stevedoreitems.presentation.model.ArtearItem
+import com.artear.stevedore.stevedoreitems.presentation.model.ArtearSection
 
 
-class HeaderShaper : DataShaper<Block, ArtearItem> {
+class HeaderShaper : DataShaper<ContainerHeader, ArtearItem> {
 
-    override suspend fun transform(input: Block): ArtearItem {
-
-        val blockHeader = (input.data as BlockHeader)
+    override suspend fun transform(input: ContainerHeader): ArtearItem {
 
         val data = HeaderData(
-                blockHeader.title,
-                BlockStyle()
-        )
+                input.title,
+                input.style)
 
         return ArtearItem(data, ArtearSection())
     }

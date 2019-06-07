@@ -1,0 +1,19 @@
+{
+  "style": {
+    "rounded": {
+      "top_left": 10,
+      "top_right": 20,
+      "bottom_left": 30,
+      "bottom_right": 40
+    },
+    "margin": {
+      "apply": true,
+      "rect": {
+        "top": 10,
+        "bottom": 10,
+        "right": 10,
+        "left": 10
+      }
+    }
+  }
+}
