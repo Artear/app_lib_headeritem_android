@@ -20,20 +20,22 @@ import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.artear.stevedore.headeritem.repository.ContainerHeaderStyle
 import com.artear.stevedore.stevedoreitems.presentation.contract.ArtearViewHolder
-import com.artear.stevedore.stevedoreitems.presentation.model.ArtearSection
+import com.artear.stevedore.stevedoreitems.presentation.model.ArtearItemDecoration
 import kotlinx.android.synthetic.main.header_view_holder.view.*
 
 
 class HeaderViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView),
         ArtearViewHolder<HeaderData<ContainerHeaderStyle>> {
 
-    override fun bind(model: HeaderData<ContainerHeaderStyle>, artearSection: ArtearSection) {
+    override fun bind(model: HeaderData<ContainerHeaderStyle>, artearItemDecoration: ArtearItemDecoration) {
         itemView.apply {
             headerTitle.text = model.title
-            model.style.background?.let {
-                headerTitle.setTextColor(Color.parseColor(it.color.light))
+            model.style.background?.color?.let {
+                rootLayout.setBackgroundColor(Color.parseColor(it.light))
             }
-            //TODO margin
+            model.style.title?.color?.let {
+                headerTitle.setTextColor(Color.parseColor(it.light))
+            }
         }
     }
 
