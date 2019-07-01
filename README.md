@@ -4,6 +4,12 @@ Header Item Library
 - Header Item Library
 
 
+Version 
+--------
+
+[![Latest Version](https://api.bintray.com/packages/artearmobile/Android/Header-Item/images/download.svg)](https://bintray.com/artearmobile/Android/Header-Item/_latestVersion)
+
+
 Download
 --------
 via Maven:
@@ -11,14 +17,14 @@ via Maven:
 <dependency>
   <groupId>com.artear.stevedore</groupId>
   <artifactId>headeritem</artifactId>
-  <version>0.0.3</version>
+  <version>0.0.5</version>
 </dependency>
 ```
 or Gradle:
 ```groovy
-implementation 'com.artear.stevedore:headeritem:0.0.3'
+implementation 'com.artear.stevedore:headeritem:0.0.5'
 ```
-UI view Lib requires at minimum Java 7 or Android 4.1.
+Lib requires at minimum Java 7 or Android 4.1.
 
 License
 =======

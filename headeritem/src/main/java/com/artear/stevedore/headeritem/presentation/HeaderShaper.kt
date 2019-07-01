@@ -18,7 +18,7 @@ package com.artear.stevedore.headeritem.presentation
 import com.artear.domain.coroutine.DataShaper
 import com.artear.stevedore.headeritem.repository.ContainerHeader
 import com.artear.stevedore.stevedoreitems.presentation.model.ArtearItem
-import com.artear.stevedore.stevedoreitems.presentation.model.ArtearSection
+import com.artear.stevedore.stevedoreitems.presentation.model.ArtearItemDecoration
 
 
 class HeaderShaper : DataShaper<ContainerHeader, ArtearItem> {
@@ -29,7 +29,7 @@ class HeaderShaper : DataShaper<ContainerHeader, ArtearItem> {
                 input.title,
                 input.style)
 
-        return ArtearItem(data, ArtearSection())
+        return ArtearItem(data, ArtearItemDecoration())
     }
 
 

@@ -22,7 +22,7 @@ import com.artear.stevedore.headeritem.R
 import com.artear.stevedore.stevedoreitems.presentation.contract.ArtearViewHolder
 import com.artear.stevedore.stevedoreitems.presentation.contract.ItemAdapter
 import com.artear.stevedore.stevedoreitems.presentation.model.ArtearItem
-import com.artear.stevedore.stevedoreitems.presentation.model.ArtearSection
+import com.artear.stevedore.stevedoreitems.presentation.model.ArtearItemDecoration
 
 
 class HeaderItemAdapter : ItemAdapter<HeaderData<*>> {
@@ -38,7 +38,7 @@ class HeaderItemAdapter : ItemAdapter<HeaderData<*>> {
     }
 
     override fun onBindViewHolderBase(holder: ArtearViewHolder<HeaderData<*>>,
-                                      model: HeaderData<*>, artearSection: ArtearSection) {
-        holder.bind(model, artearSection)
+                                      model: HeaderData<*>, artearItemDecoration: ArtearItemDecoration) {
+        holder.bind(model, artearItemDecoration)
     }
 }
