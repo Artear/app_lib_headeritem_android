@@ -17,12 +17,12 @@ via Maven:
 <dependency>
   <groupId>com.artear.stevedore</groupId>
   <artifactId>headeritem</artifactId>
-  <version>0.0.5</version>
+  <version>0.0.7</version>
 </dependency>
 ```
 or Gradle:
 ```groovy
-implementation 'com.artear.stevedore:headeritem:0.0.5'
+implementation 'com.artear.stevedore:headeritem:0.0.7'
 ```
 Lib requires at minimum Java 7 or Android 4.1.
 
