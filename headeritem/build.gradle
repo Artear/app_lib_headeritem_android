@@ -100,8 +100,9 @@ dependencies {
     implementation lib.androidx.constraintLayout
 
     //Artear
-    implementation lib.artear.stevedoreItems
     implementation lib.artear.domain
+    implementation lib.artear.stevedoreItems
+    implementation lib.artear.uiView
 }
 
 dependencyUpdates.resolutionStrategy {

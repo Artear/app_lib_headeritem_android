@@ -33,6 +33,13 @@ class HeaderViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView),
             model.style.background?.color?.let {
                 rootLayout.setBackgroundColor(Color.parseColor(it.light))
             }
+            model.style.title?.underline?.color?.let {
+                headerTitle.underlineEnabled = true
+                headerTitle.underLineColor = Color.parseColor(it.light)
+                headerTitle.underlineWidth = 8f
+                headerTitle.underlineSeparation = -2f
+
+            }
             model.style.title?.color?.let {
                 headerTitle.setTextColor(Color.parseColor(it.light))
             }

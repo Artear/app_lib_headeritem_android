@@ -18,7 +18,7 @@ buildscript {
                 ],
                 artear          : [
                         domainVersion        : "0.0.8",
-                        stevedoreItemsVersion: "0.2.10",
+                        stevedoreItemsVersion: "0.2.11",
                         uiViewVersion        : "0.2.4"
                 ],
                 espresso        : [
