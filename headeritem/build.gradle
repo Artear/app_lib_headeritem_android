@@ -95,6 +95,9 @@ dependencies {
     //Kotlin
     implementation lib.kotlin.standardLib
 
+    //Gson
+    implementation lib.gson.library
+
     //Android X
     implementation lib.androidx.appcompat
     implementation lib.androidx.constraintLayout
