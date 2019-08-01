@@ -8,13 +8,25 @@
 
     <com.artear.ui.views.UnderlinedTextView
         android:id="@+id/headerTitle"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal|top"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_height="105dp"
         tools:padding="21dp"
         tools:text="TE PUEDE INTERESAR" />
+
+    <com.artear.ui.views.UnderlinedTextView
+        android:id="@+id/headerLinkIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|top"
+        android:text="@string/link_arrow"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/headerTitle"
+        app:layout_constraintLeft_toRightOf="@id/headerTitle"
+        app:layout_constraintTop_toTopOf="@id/headerTitle" />
 
     <View
         android:layout_width="match_parent"
