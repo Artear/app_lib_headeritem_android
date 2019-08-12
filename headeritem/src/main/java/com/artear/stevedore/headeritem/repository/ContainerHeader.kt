@@ -19,6 +19,6 @@ import com.google.gson.annotations.JsonAdapter
 
 @JsonAdapter(ContainerHeaderDeserializer::class)
 data class ContainerHeader(
-    val title: String,
-    val style: ContainerHeaderStyle
+        val title: String,
+        val style: ContainerHeaderStyle
 )

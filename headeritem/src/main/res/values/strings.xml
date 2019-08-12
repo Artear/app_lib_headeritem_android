@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Headeritem</string>
+    <string name="link_arrow"><![CDATA[>]]></string>
 </resources>

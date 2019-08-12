@@ -24,8 +24,8 @@ import com.google.gson.annotations.JsonAdapter
 
 @JsonAdapter(ContainerHeaderStyleDeserializer::class)
 class ContainerHeaderStyle(
-    val background: StyleBackground?,
-    var title: StyleText?,
-    var rounded: StyleRound?,
-    var margin: StyleMargin
+        val background: StyleBackground?,
+        var title: StyleText?,
+        var rounded: StyleRound?,
+        var margin: StyleMargin
 ) : ArtearStyle()
